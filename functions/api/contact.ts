@@ -73,15 +73,15 @@ const MATERIAL_LINKS: Record<string, Array<{ label: string; url: string }>> = {
   lp_documents: [
     {
       label: "食品開発展2025セミナー資料「食品分析の最前線」",
-      url: `${DOCUMENT_BASE_URL}/landing/ja/SD700II/documents/2025_exhibition_seminar.pdf`,
+      url: `${DOCUMENT_BASE_URL}/landing/jp/SD700II/documents/2025_exhibition_seminar.pdf`,
     },
     {
       label: "測定ソリューション機器ラインナップ比較資料",
-      url: `${DOCUMENT_BASE_URL}/landing/ja/SD700II/documents/instrunments_comparison.pdf`,
+      url: `${DOCUMENT_BASE_URL}/landing/jp/SD700II/documents/instrunments_comparison.pdf`,
     },
     {
       label: "SD-700II 製品カタログ",
-      url: `${DOCUMENT_BASE_URL}/landing/ja/SD700II/documents/sd-700II_catalog.pdf`,
+      url: `${DOCUMENT_BASE_URL}/landing/jp/SD700II/documents/sd-700II_catalog.pdf`,
     },
   ],
 };
