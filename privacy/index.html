@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー | 株式会社サン科学</title>
+  <style>
+    :root {
+      --bg: #f3f6fb;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --muted: #5b6575;
+      --line: #d9e2ef;
+      --main: #12325c;
+      --sub: #2f7dd1;
+      --shadow: 0 10px 24px rgba(18, 50, 92, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef3fb 0%, #f8faff 100%);
+      line-height: 1.8;
+    }
+
+    .page {
+      max-width: 1040px;
+      margin: 28px auto 40px;
+      padding: 0 16px;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: linear-gradient(130deg, #10325d 0%, #1f4d87 65%, #3a7fcf 100%);
+      color: #fff;
+      padding: 26px 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 1.9rem;
+      line-height: 1.35;
+    }
+
+    .hero p {
+      margin: 0;
+      opacity: 0.95;
+      font-size: 0.98rem;
+    }
+
+    .notice {
+      border: 1px solid #ffd68f;
+      background: #fff7e7;
+      color: #6b4b11;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 0 0 14px;
+      font-size: 0.92rem;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .tab-btn {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--main);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn[aria-selected="true"] {
+      background: var(--main);
+      color: #fff;
+      border-color: var(--main);
+      box-shadow: 0 4px 10px rgba(18, 50, 92, 0.2);
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      padding: 24px 20px;
+    }
+
+    h2 {
+      color: var(--main);
+      font-size: 1.12rem;
+      margin: 24px 0 10px;
+      border-left: 4px solid #4a90e2;
+      padding-left: 10px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 0 0 12px 1.2em;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .section-number {
+      margin: 14px 0 8px;
+      font-weight: 700;
+      color: var(--main);
+    }
+
+    .contact-box {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px;
+      background: #f8fbff;
+      margin-top: 8px;
+    }
+
+    .footnote {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 18px;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 760px) {
+      .hero h1 {
+        font-size: 1.55rem;
+      }
+      .panel {
+        padding: 18px 14px;
+      }
+      .tab-btn {
+        flex: 1;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>プライバシーポリシー</h1>
+    </header>
+
+    <div class="notice">
+      <strong>Notice:</strong> Non-Japanese versions (English, Chinese, Thai, and Vietnamese) are machine-translated references. In case of any discrepancy, the Japanese version shall prevail.<br>
+      <strong>注意：</strong>日本語以外（英語・中国語・タイ語・ベトナム語）の各言語版は機械翻訳による参考情報です。内容に相違がある場合は、日本語版の記載が優先して適用されます。
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Language Tabs">
+      <button id="tab-ja" class="tab-btn" role="tab" aria-selected="true" aria-controls="panel-ja">日本語</button>
+      <button id="tab-en" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-en">English</button>
+      <button id="tab-zh" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-zh">中文</button>
+      <button id="tab-th" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-th">ไทย</button>
+      <button id="tab-vi" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-vi">Tiếng Việt</button>
+    </div>
+
+    <section id="panel-ja" class="panel" role="tabpanel" aria-labelledby="tab-ja">
+      <p>株式会社サン科学（以下、「当社」といいます。）は、当社が取り扱う個人情報（顧客、パートナー企業等の関係者及び従業員・採用応募者等を含みます。）を適切に保護することは、当社の重要な社会的責務であると認識しております。当社は、「個人情報の保護に関する法律」及びこれに関連する法令並びに個人情報保護委員会が定めるガイドライン等（以下総称して「関連法令等」といいます。）を遵守し、以下のとおりプライバシーポリシーを定め、役員及び従業員その他関係者に周知徹底することにより、個人情報の適正な取扱い及び継続的な改善に努めてまいります。</p>
+
+      <h2>第1条（関連法令等の遵守）</h2>
+      <p>当社は、個人情報の取扱いに際し、「個人情報の保護に関する法律」その他の関連法令等を遵守いたします。</p>
+
+      <h2>第2条（個人情報の定義）</h2>
+      <p>本プライバシーポリシーにおいて、「個人情報」とは、「個人情報の保護に関する法律」に定める「生存する個人に関する情報」であって、当該情報に含まれる氏名、住所、電話番号、メールアドレス、勤務先、役職その他の記述、または個人識別符号等により特定の個人を識別できるものをいいます。</p>
+
+      <h2>第3条（個人情報の取得及び利用目的）</h2>
+      <p>当社は、適正かつ適法な手段により個人情報を取得し、あらかじめ特定した以下の利用目的の達成に必要な範囲内で利用いたします。</p>
+
+      <p class="section-number">1．お客様（顧客）に関する個人情報</p>
+      <ul>
+        <li>当社が取扱う製品・サービス（以下「製品等」といいます。）に関するお問い合わせへの対応及びご要望への対応</li>
+        <li>製品等の提供、保守・サポート及びアフターサービス対応</li>
+        <li>製品等の改善・開発並びに品質向上を目的とした調査及び分析</li>
+        <li>製品等に関する情報提供、キャンペーン、イベント等に関するご案内（当社ウェブサイト上で資料ダウンロードを行った場合、当社によるメールマガジン等の配信を含むマーケティング利用に同意いただいたものとして取り扱います。）</li>
+        <li>お客様からのご意見、ご要望及び苦情等への対応</li>
+      </ul>
+
+      <p class="section-number">2．パートナー企業（取引先）ご担当者様に関する個人情報</p>
+      <ul>
+        <li>取引及び業務遂行に必要な連絡、折衝、契約交渉等</li>
+        <li>製品等に関する手配、納入、サービス提供に関わる連絡及び業務遂行</li>
+      </ul>
+
+      <p class="section-number">3．従業員及び採用応募者に関する個人情報</p>
+      <ul>
+        <li>採用選考及び採用に関する連絡・手続</li>
+        <li>労務・人事管理（勤怠管理、給与・社会保険関連手続、福利厚生、安全衛生、教育研修、人事評価等）の実施</li>
+        <li>法令及び社内規程に基づく報告、届け出</li>
+      </ul>
+
+      <h2>第4条（ウェブサイトにおける個人情報の取扱い）</h2>
+      <p>当社は、当社ウェブサイト（以下「当サイト」といいます。）において、問い合わせフォームのご利用者様に氏名、メールアドレス、会社名、部署名等のご入力をお願いする場合があります。取得した情報は、お問い合わせへの回答、関連情報の提供及びサービス品質向上のために利用いたします。</p>
+      <p>また、当サイトにおいて資料ダウンロードを行った場合、メールマガジン配信その他のマーケティング利用に同意いただいたものとして、当社は当該個人情報をメールマガジン、キャンペーン、セミナー、イベント情報その他マーケティング活動に利用することができます。なお、同意はいつでも撤回することができ、メールマガジン等の停止をご希望の際には、配信メールに記載する方法または本ポリシー末尾の問い合わせ窓口までお申し出ください。</p>
+
+      <h2>第5条（個人情報の第三者提供）</h2>
+      <p>当社は、法令に定めのある場合を除き、原則としてご本人様の同意なく個人情報を第三者に提供いたしません。ただし、利用目的の達成に必要な範囲内で、当社が適切に監督する委託先に個人情報の取扱いを委託することがあります。この場合、当社は委託先に対し、個人情報の適正な取扱い及び安全管理措置の実施等を契約等により義務付け、適切に監督いたします。</p>
+
+      <h2>第6条（個人情報の安全管理措置）</h2>
+      <p>当社は、個人情報について、漏えい、滅失、き損、不正アクセス等を防止するために、組織的、人的、物理的及び技術的安全管理措置を講じます。また、内部規程の整備、教育研修の実施、内部監査などを通じ、これらの措置を継続的に見直し、改善してまいります。</p>
+
+      <h2>第7条（保有個人情報に関する開示等のご請求手続）</h2>
+      <p>当社は、当社が保有する個人情報について、ご本人様（または正当な代理人様）から、利用目的の通知、開示、訂正、追加または削除、利用停止、消去及び第三者提供の停止（以下、「開示等のご請求」といいます。）のお申し出があった場合、関連法令等に基づき、適切かつ迅速に対応いたします。開示等のご請求に関する手続等につきましては、本プライバシーポリシー末尾記載の問い合わせ窓口までご連絡ください。</p>
+
+      <h2>第8条（お問い合わせ窓口）</h2>
+      <p>本プライバシーポリシー、当社が取り扱う個人情報及び開示等のご請求に関するお問い合わせは、以下の窓口までお願いいたします。</p>
+      <div class="contact-box">
+        <p>【お問い合わせ先】</p>
+        <p>株式会社サン科学　個人情報担当窓口</p>
+        <p>住所：〒154-0016 東京都世田谷区弦巻4-2-3 塚本ルミネビル2A</p>
+        <p>メールアドレス：info@sun-kagaku.com</p>
+      </div>
+
+      <h2>第9条（プライバシーポリシーの変更）</h2>
+      <p>当社は、法令改正、社会情勢、経営環境の変化その他の必要に応じて、本プライバシーポリシーを随時見直し、改訂することがあります。改訂を行った場合には、当社ウェブサイト等を通じて速やかに公表します。</p>
+
+      <p class="footnote">以上</p>
+    </section>
+
+    <section id="panel-en" class="panel" role="tabpanel" aria-labelledby="tab-en" hidden>
+      <p>Sun Scientific Co., Ltd. ("we", "our", or the "Company") recognizes that appropriately protecting personal information we handle (including customers, partner company representatives, employees, and job applicants) is an important social responsibility. We comply with the Act on the Protection of Personal Information of Japan and related laws, regulations, and guidelines issued by the Personal Information Protection Commission (collectively, the "Applicable Laws"). We establish this Privacy Policy, ensure that directors, employees, and relevant persons are fully informed of it, and strive for proper handling and continuous improvement of personal information protection.</p>
+
+      <h2>Article 1 (Compliance with Applicable Laws)</h2>
+      <p>When handling personal information, we comply with the Act on the Protection of Personal Information and other Applicable Laws.</p>
+
+      <h2>Article 2 (Definition of Personal Information)</h2>
+      <p>In this Privacy Policy, "Personal Information" means information about a living individual as defined by the Act on the Protection of Personal Information, including information that can identify a specific individual by name, address, phone number, email address, workplace, title, other descriptions, or personal identification codes.</p>
+
+      <h2>Article 3 (Acquisition of Personal Information and Purpose of Use)</h2>
+      <p>We acquire personal information by proper and lawful means and use it only within the scope necessary to achieve the following specified purposes:</p>
+
+      <p class="section-number">1. Personal information of customers</p>
+      <ul>
+        <li>To respond to inquiries and requests regarding products and services handled by us (collectively, "Products, etc.").</li>
+        <li>To provide Products, etc., and to conduct maintenance, support, and after-sales services.</li>
+        <li>To investigate and analyze for improvement, development, and quality enhancement of Products, etc.</li>
+        <li>To provide information on Products, campaigns, and events (when a user downloads materials on our website, such action is treated as consent to marketing use including email newsletters).</li>
+        <li>To respond to customers' opinions, requests, and complaints.</li>
+      </ul>
+
+      <p class="section-number">2. Personal information of representatives of partner companies (business partners)</p>
+      <ul>
+        <li>Communication, negotiation, and contract discussions required for transactions and business execution.</li>
+        <li>Communication and operations related to arrangement, delivery, and service provision for Products, etc.</li>
+      </ul>
+
+      <p class="section-number">3. Personal information of employees and job applicants</p>
+      <ul>
+        <li>Recruitment screening and communications/procedures related to hiring.</li>
+        <li>Labor and HR management (attendance, payroll/social insurance procedures, welfare, occupational health and safety, training, personnel evaluation, etc.).</li>
+        <li>Reporting and filings required by laws and internal regulations.</li>
+      </ul>
+
+      <h2>Article 4 (Handling of Personal Information on Our Website)</h2>
+      <p>On our website ("Site"), users of the inquiry form may be asked to provide information such as name, email address, company name, and department. Acquired information is used to answer inquiries, provide related information, and improve service quality.</p>
+      <p>In addition, when a user downloads materials on the Site, such action is treated as consent to marketing use including email newsletters. We may use such personal information for newsletters, campaigns, seminars, event information, and other marketing activities. Consent may be withdrawn at any time. To stop receiving newsletters or similar communications, please follow the instructions in such emails or contact us through the inquiry point listed at the end of this policy.</p>
+
+      <h2>Article 5 (Provision of Personal Information to Third Parties)</h2>
+      <p>Except as required by law, we do not provide personal information to third parties without prior consent of the individual. However, within the scope necessary to achieve the purposes of use, we may entrust handling of personal information to contractors appropriately supervised by us. In such cases, we require those contractors by contract and other means to implement proper handling and security control measures and supervise them appropriately.</p>
+
+      <h2>Article 6 (Security Control Measures)</h2>
+      <p>We implement organizational, human, physical, and technical security control measures to prevent leakage, loss, damage, and unauthorized access to personal information. We continuously review and improve these measures through development of internal rules, training, and internal audits.</p>
+
+      <h2>Article 7 (Procedures for Requests Regarding Retained Personal Information)</h2>
+      <p>Upon requests from an individual (or duly authorized representative) regarding retained personal information, including notice of purpose of use, disclosure, correction, addition, deletion, suspension of use, erasure, and suspension of third-party provision ("Requests for Disclosure, etc."), we will respond appropriately and promptly in accordance with Applicable Laws. For procedures and details, please contact the inquiry point listed at the end of this policy.</p>
+
+      <h2>Article 8 (Contact Point)</h2>
+      <p>For inquiries regarding this Privacy Policy, personal information handled by us, and Requests for Disclosure, etc., please contact:</p>
+      <div class="contact-box">
+        <p>Sun Scientific Co., Ltd. - Personal Information Desk</p>
+        <p>Address: Tsukamoto Lumine Building 2A, 4-2-3 Tsurumaki, Setagaya-ku, Tokyo 154-0016, Japan</p>
+        <p>Email: info@sun-kagaku.com</p>
+      </div>
+
+      <h2>Article 9 (Changes to this Privacy Policy)</h2>
+      <p>We may review and revise this Privacy Policy from time to time in response to legal amendments, social conditions, changes in business environment, or other needs. Any revisions will be promptly announced through our website or other appropriate means.</p>
+
+      <p class="footnote">Reference translation only. The Japanese version shall prevail.</p>
+    </section>
+
+    <section id="panel-zh" class="panel" role="tabpanel" aria-labelledby="tab-zh" hidden>
+      <p>Sun Scientific 株式会社（以下简称“本公司”）认识到，妥善保护本公司处理的个人信息（包括客户、合作伙伴相关人员、员工及应聘者等）是本公司的重要社会责任。本公司遵守《日本个人信息保护法》及相关法律法规和指南（以下统称“适用法规”），并制定本隐私政策，确保董事、员工及相关人员充分知悉并持续改进个人信息管理。</p>
+
+      <h2>第1条（遵守适用法规）</h2>
+      <p>本公司在处理个人信息时，遵守《日本个人信息保护法》及其他适用法规。</p>
+
+      <h2>第2条（个人信息的定义）</h2>
+      <p>本政策所称“个人信息”，系指可通过姓名、地址、电话号码、电子邮件、工作单位、职务或其他描述及个人识别符号识别特定个人的生存自然人信息。</p>
+
+      <h2>第3条（获取与使用目的）</h2>
+      <p>本公司以合法、适当方式获取个人信息，并仅在实现以下目的所需范围内使用。</p>
+      <ul>
+        <li>回复关于产品与服务的咨询及需求。</li>
+        <li>提供产品、维护支持及售后服务。</li>
+        <li>用于产品改进、开发及质量提升的调查与分析。</li>
+        <li>提供产品信息、活动与营销通知（在网站下载资料时，视为同意包括邮件简报在内的营销使用）。</li>
+        <li>处理客户意见、请求与投诉。</li>
+      </ul>
+
+      <h2>第4条（网站上的个人信息处理）</h2>
+      <p>在本公司网站中，用户可能需填写姓名、邮箱、公司名、部门名等信息。该信息用于回复咨询、提供相关信息及提升服务质量。</p>
+      <p>此外，当用户在网站下载资料时，视为同意将其个人信息用于邮件简报、活动通知、研讨会信息及其他营销活动。用户可随时撤回同意。</p>
+
+      <h2>第5条（向第三方提供）</h2>
+      <p>除法律规定外，未经本人同意，本公司原则上不向第三方提供个人信息。但在实现使用目的所必要范围内，本公司可能委托受监督的合作方处理，并通过合同等方式要求其采取适当管理措施。</p>
+
+      <h2>第6条（安全管理措施）</h2>
+      <p>本公司采取组织、人员、物理及技术层面的安全措施，防止泄露、灭失、损毁及非法访问，并持续审查与改进。</p>
+
+      <h2>第7条（关于保有个人信息的请求）</h2>
+      <p>对于本人或合法代理人提出的利用目的通知、公开、更正、追加、删除、停止使用、删除及停止第三方提供等请求，本公司将依据适用法规及时妥善处理。</p>
+
+      <h2>第8条（咨询窗口）</h2>
+      <div class="contact-box">
+        <p>Sun Scientific Co., Ltd. 个人信息窗口</p>
+        <p>地址：日本东京都世田谷区弦卷4-2-3 塚本Lumine大楼2A（邮编154-0016）</p>
+        <p>邮箱：info@sun-kagaku.com</p>
+      </div>
+
+      <h2>第9条（隐私政策的变更）</h2>
+      <p>本公司可能根据法律修订、社会形势或经营环境变化等情况，随时修订本政策，并通过网站等方式及时公布。</p>
+
+      <p class="footnote">本中文版为机器翻译参考。若有差异，以日文版为准。</p>
+    </section>
+
+    <section id="panel-th" class="panel" role="tabpanel" aria-labelledby="tab-th" hidden>
+      <p>บริษัท ซัน ไซเอนทิฟิก จำกัด ("บริษัท") ตระหนักว่าการคุ้มครองข้อมูลส่วนบุคคลที่บริษัทจัดการ (รวมถึงลูกค้า ผู้เกี่ยวข้องของคู่ค้า พนักงาน และผู้สมัครงาน) อย่างเหมาะสมเป็นความรับผิดชอบทางสังคมที่สำคัญ บริษัทปฏิบัติตามกฎหมายคุ้มครองข้อมูลส่วนบุคคลของญี่ปุ่นและกฎหมาย/แนวทางที่เกี่ยวข้อง ("กฎหมายที่เกี่ยวข้อง") และกำหนดนโยบายความเป็นส่วนตัวนี้เพื่อให้เกิดการจัดการข้อมูลส่วนบุคคลอย่างเหมาะสมและปรับปรุงอย่างต่อเนื่อง</p>
+
+      <h2>ข้อ 1 (การปฏิบัติตามกฎหมายที่เกี่ยวข้อง)</h2>
+      <p>บริษัทปฏิบัติตามกฎหมายคุ้มครองข้อมูลส่วนบุคคลและกฎหมายที่เกี่ยวข้องอื่น ๆ ในการจัดการข้อมูลส่วนบุคคล</p>
+
+      <h2>ข้อ 2 (นิยามข้อมูลส่วนบุคคล)</h2>
+      <p>"ข้อมูลส่วนบุคคล" หมายถึงข้อมูลของบุคคลธรรมดาที่ยังมีชีวิต ซึ่งสามารถระบุตัวบุคคลได้จากชื่อ ที่อยู่ หมายเลขโทรศัพท์ อีเมล สถานที่ทำงาน ตำแหน่ง หรือข้อมูลระบุตัวตนอื่น ๆ ตามกฎหมายญี่ปุ่น</p>
+
+      <h2>ข้อ 3 (การได้มาและวัตถุประสงค์การใช้)</h2>
+      <p>บริษัทจะได้มาซึ่งข้อมูลส่วนบุคคลด้วยวิธีที่เหมาะสมและชอบด้วยกฎหมาย และใช้เท่าที่จำเป็นเพื่อวัตถุประสงค์ดังต่อไปนี้</p>
+      <ul>
+        <li>ตอบข้อสอบถามและความต้องการเกี่ยวกับสินค้า/บริการ</li>
+        <li>ให้บริการสินค้า การบำรุงรักษา การสนับสนุน และบริการหลังการขาย</li>
+        <li>วิเคราะห์เพื่อปรับปรุง พัฒนา และยกระดับคุณภาพสินค้า/บริการ</li>
+        <li>แจ้งข่าวสารสินค้า แคมเปญ งานอีเวนต์ และข้อมูลการตลาด (หากมีการดาวน์โหลดเอกสารบนเว็บไซต์ จะถือว่ายินยอมต่อการใช้เพื่อการตลาดรวมถึงอีเมลข่าวสาร)</li>
+        <li>จัดการความคิดเห็น คำขอ และข้อร้องเรียนของลูกค้า</li>
+      </ul>
+
+      <h2>ข้อ 4 (การจัดการข้อมูลบนเว็บไซต์)</h2>
+      <p>บนเว็บไซต์ของบริษัท ผู้ใช้แบบฟอร์มติดต่ออาจต้องกรอกชื่อ อีเมล ชื่อบริษัท และแผนก ข้อมูลที่ได้รับจะใช้เพื่อการตอบกลับ การให้ข้อมูลที่เกี่ยวข้อง และการพัฒนาคุณภาพบริการ</p>
+      <p>นอกจากนี้ เมื่อมีการดาวน์โหลดเอกสารบนเว็บไซต์ จะถือว่ายินยอมให้บริษัทใช้ข้อมูลดังกล่าวเพื่อการตลาด เช่น จดหมายข่าว อีเวนต์ และสัมมนา ทั้งนี้ ผู้ใช้สามารถเพิกถอนความยินยอมได้ทุกเมื่อ</p>
+
+      <h2>ข้อ 5 (การเปิดเผยต่อบุคคลที่สาม)</h2>
+      <p>เว้นแต่กฎหมายกำหนด บริษัทจะไม่เปิดเผยข้อมูลส่วนบุคคลต่อบุคคลที่สามโดยไม่ได้รับความยินยอมจากเจ้าของข้อมูล อย่างไรก็ตาม บริษัทอาจมอบหมายให้ผู้รับจ้างที่อยู่ภายใต้การกำกับดูแลของบริษัทดำเนินการภายในขอบเขตที่จำเป็น</p>
+
+      <h2>ข้อ 6 (มาตรการรักษาความปลอดภัย)</h2>
+      <p>บริษัทใช้มาตรการด้านองค์กร บุคลากร กายภาพ และเทคนิค เพื่อป้องกันการรั่วไหล สูญหาย เสียหาย และการเข้าถึงโดยมิชอบ พร้อมทบทวนและปรับปรุงอย่างต่อเนื่อง</p>
+
+      <h2>ข้อ 7 (การขอเปิดเผย/แก้ไขข้อมูล)</h2>
+      <p>สำหรับคำขอแจ้งวัตถุประสงค์การใช้ การเปิดเผย การแก้ไข การเพิ่ม การลบ การระงับการใช้ การลบข้อมูล หรือการระงับการให้แก่บุคคลที่สาม บริษัทจะดำเนินการอย่างเหมาะสมและรวดเร็วตามกฎหมายที่เกี่ยวข้อง</p>
+
+      <h2>ข้อ 8 (ช่องทางติดต่อ)</h2>
+      <div class="contact-box">
+        <p>Sun Scientific Co., Ltd. หน่วยงานดูแลข้อมูลส่วนบุคคล</p>
+        <p>ที่อยู่: Tsukamoto Lumine Building 2A, 4-2-3 Tsurumaki, Setagaya-ku, Tokyo 154-0016, Japan</p>
+        <p>อีเมล: info@sun-kagaku.com</p>
+      </div>
+
+      <h2>ข้อ 9 (การเปลี่ยนแปลงนโยบายความเป็นส่วนตัว)</h2>
+      <p>บริษัทอาจทบทวนและปรับปรุงนโยบายนี้เป็นครั้งคราวตามการแก้ไขกฎหมาย สภาพสังคม หรือสภาพแวดล้อมทางธุรกิจ และจะประกาศผ่านเว็บไซต์ของบริษัทโดยเร็ว</p>
+
+      <p class="footnote">ฉบับภาษาไทยนี้เป็นการแปลโดยเครื่องเพื่ออ้างอิงเท่านั้น หากมีความแตกต่าง ให้ยึดข้อความภาษาญี่ปุ่นเป็นหลัก</p>
+    </section>
+
+    <section id="panel-vi" class="panel" role="tabpanel" aria-labelledby="tab-vi" hidden>
+      <p>Công ty Sun Scientific Co., Ltd. ("Công ty") nhận thức rằng việc bảo vệ phù hợp thông tin cá nhân mà Công ty xử lý (bao gồm khách hàng, đối tác, nhân viên và ứng viên tuyển dụng) là trách nhiệm xã hội quan trọng. Công ty tuân thủ Luật Bảo vệ Thông tin Cá nhân của Nhật Bản và các quy định/hướng dẫn liên quan ("Pháp luật áp dụng"), đồng thời ban hành Chính sách bảo mật này để bảo đảm việc xử lý đúng đắn và cải tiến liên tục.</p>
+
+      <h2>Điều 1 (Tuân thủ pháp luật áp dụng)</h2>
+      <p>Công ty tuân thủ Luật Bảo vệ Thông tin Cá nhân và các pháp luật liên quan khi xử lý dữ liệu cá nhân.</p>
+
+      <h2>Điều 2 (Định nghĩa thông tin cá nhân)</h2>
+      <p>"Thông tin cá nhân" là thông tin về cá nhân còn sống có thể xác định một người cụ thể thông qua họ tên, địa chỉ, số điện thoại, email, nơi làm việc, chức vụ hoặc mã định danh cá nhân theo pháp luật Nhật Bản.</p>
+
+      <h2>Điều 3 (Thu thập và mục đích sử dụng)</h2>
+      <p>Công ty thu thập thông tin cá nhân bằng phương thức hợp pháp, phù hợp và chỉ sử dụng trong phạm vi cần thiết cho các mục đích sau:</p>
+      <ul>
+        <li>Phản hồi các câu hỏi/yêu cầu về sản phẩm và dịch vụ.</li>
+        <li>Cung cấp sản phẩm, bảo trì, hỗ trợ và dịch vụ sau bán hàng.</li>
+        <li>Khảo sát, phân tích để cải tiến, phát triển và nâng cao chất lượng.</li>
+        <li>Cung cấp thông tin sản phẩm, chiến dịch, sự kiện (khi tải tài liệu trên website, hành vi đó được xem là đồng ý cho mục đích marketing bao gồm bản tin email).</li>
+        <li>Xử lý ý kiến, yêu cầu và khiếu nại của khách hàng.</li>
+      </ul>
+
+      <h2>Điều 4 (Xử lý dữ liệu trên website)</h2>
+      <p>Trên website của Công ty, người dùng biểu mẫu liên hệ có thể được yêu cầu nhập họ tên, email, tên công ty, phòng ban... Thông tin thu thập được sử dụng để phản hồi, cung cấp thông tin liên quan và cải thiện chất lượng dịch vụ.</p>
+      <p>Ngoài ra, khi người dùng tải tài liệu trên website, hành vi đó được xem là đã đồng ý cho việc sử dụng dữ liệu vào mục đích marketing như bản tin email, chiến dịch, hội thảo và sự kiện. Người dùng có thể rút lại sự đồng ý bất cứ lúc nào.</p>
+
+      <h2>Điều 5 (Cung cấp cho bên thứ ba)</h2>
+      <p>Ngoại trừ trường hợp pháp luật quy định, Công ty không cung cấp dữ liệu cá nhân cho bên thứ ba nếu không có sự đồng ý của chủ thể dữ liệu. Tuy nhiên, trong phạm vi cần thiết, Công ty có thể ủy thác cho nhà cung cấp được giám sát phù hợp.</p>
+
+      <h2>Điều 6 (Biện pháp an toàn)</h2>
+      <p>Công ty áp dụng biện pháp tổ chức, nhân sự, vật lý và kỹ thuật để phòng ngừa rò rỉ, mất mát, hư hỏng và truy cập trái phép; đồng thời thường xuyên rà soát và cải tiến.</p>
+
+      <h2>Điều 7 (Yêu cầu công bố/chỉnh sửa dữ liệu)</h2>
+      <p>Đối với yêu cầu thông báo mục đích sử dụng, công bố, chỉnh sửa, bổ sung, xóa, ngừng sử dụng hoặc ngừng cung cấp cho bên thứ ba, Công ty sẽ xử lý phù hợp và nhanh chóng theo pháp luật áp dụng.</p>
+
+      <h2>Điều 8 (Thông tin liên hệ)</h2>
+      <div class="contact-box">
+        <p>Sun Scientific Co., Ltd. - Bộ phận phụ trách thông tin cá nhân</p>
+        <p>Địa chỉ: Tsukamoto Lumine Building 2A, 4-2-3 Tsurumaki, Setagaya-ku, Tokyo 154-0016, Japan</p>
+        <p>Email: info@sun-kagaku.com</p>
+      </div>
+
+      <h2>Điều 9 (Thay đổi chính sách bảo mật)</h2>
+      <p>Công ty có thể rà soát và sửa đổi chính sách này tùy theo sửa đổi pháp luật, bối cảnh xã hội, môi trường kinh doanh hoặc nhu cầu khác và sẽ công bố kịp thời trên website.</p>
+
+      <p class="footnote">Bản tiếng Việt này là bản dịch máy dùng để tham khảo. Trong trường hợp có khác biệt, bản tiếng Nhật sẽ được ưu tiên áp dụng.</p>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const langs = ["ja", "en", "zh", "th", "vi"];
+
+      function activate(lang) {
+        langs.forEach(function (code) {
+          const tab = document.getElementById("tab-" + code);
+          const panel = document.getElementById("panel-" + code);
+          const isActive = code === lang;
+          if (tab) tab.setAttribute("aria-selected", isActive ? "true" : "false");
+          if (panel) panel.hidden = !isActive;
+        });
+      }
+
+      langs.forEach(function (code) {
+        const tab = document.getElementById("tab-" + code);
+        if (!tab) return;
+        tab.addEventListener("click", function () {
+          activate(code);
+          if (code === "ja") {
+            history.replaceState(null, "", location.pathname + location.search);
+          } else {
+            history.replaceState(null, "", location.pathname + location.search + "#" + code);
+          }
+        });
+      });
+
+      const hash = window.location.hash.toLowerCase().replace("#", "");
+      if (langs.includes(hash)) activate(hash);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食品テクスチャー測定器 | その食感、数値で語れますか？</title>
+    <meta name="description" content="食品の「おいしさ」を科学で裏付ける、テクスチャー測定。硬さ・もろさ・弾力・付着性を客観的な数値データで可視化し、食品開発と品質管理を支援します。">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+    <!-- 必要なフォントの読み込み (Google Fonts: Noto Sans JP 等) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SP用フローティングCTA（常に画面下部に追従） -->
+    <a href="#form-section" class="sp-floating-cta">無料で資料を受け取る</a>
+
+    <!-- ==============================================
+         Header（起）スライダーセクション (Full Width)
+         ============================================== -->
+    <section class="hero-slider" id="hero">
+        <div class="slider-container">
+            <!-- Slide 1: Primary -->
+            <div class="slide active">
+                <img src="./asset/header_1.png" alt="その食感、数値で語れますか？" class="hero-image">
+            </div>
+            <!-- Slide 2: Secondary -->
+            <div class="slide">
+                <img src="./asset/header_2.png" alt="Made in Japan の精密測定技術" class="hero-image">
+            </div>
+            <!-- Slide 3: Tertiary -->
+            <div class="slide">
+                <img src="./asset/header_3.png" alt="世界で選ばれるテクスチャー測定" class="hero-image">
+            </div>
+        </div>
+        <!-- スライダーコントロール -->
+        <div class="slider-controls">
+            <button class="slider-dot active" aria-label="Slide 1"></button>
+            <button class="slider-dot" aria-label="Slide 2"></button>
+            <button class="slider-dot" aria-label="Slide 3"></button>
+        </div>
+    </section>
+
+    <!-- メインコンテンツラッパー (Two Column Layout) -->
+    <div class="layout-wrapper">
+
+        <!-- 左側・メインカラム -->
+        <main class="main-content">
+
+
+            <!-- ==============================================
+                 Body1（承）なぜ今、食感の定量化が必要か
+                 ============================================== -->
+            <section class="section body1" id="importance">
+                <div class="section-header">
+                    <h2>なぜ今、食感の「定量化」が必要なのか</h2>
+                    <p class="lead-text">「なんとなくの評価」では、品質も開発速度も伸びにくい時代です。</p>
+                </div>
+
+                <div class="body1-description">
+                    <p>食品市場では、再現性のある品質管理と説明可能な開発プロセスが求められています。</p>
+                    <p>官能評価だけでは担当者差・タイミング差が生じ、判断がぶれやすくなります。</p>
+                    <p><strong>テクスチャー測定なら、食感を共通指標で管理し、意思決定を速く正確にできます。</strong></p>
+                </div>
+
+
+
+                <h3 class="subsection-title">測定で分かること</h3>
+                <div class="card-grid">
+                    <!-- Card 1 -->
+                    <div class="feature-card">
+                        <img src="./asset/bread.png" alt="押し込み試験イメージ（パン）" class="card-image">
+                        <h4>硬さ／軟らかさ</h4>
+                        <p>食品の基本的な硬さや反発力を測定。パンのふんわり感や、ゼリーの絶妙な硬さを客観評価します。</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="feature-card">
+                        <img src="./asset/gummy.png" alt="グミ圧縮イメージ" class="card-image">
+                        <h4>弾力</h4>
+                        <p>圧縮と回復の挙動を測ることで、グミの噛みごたえや、かまぼこのプリッと感を客観指標で管理できます。</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="feature-card">
+                        <img src="./asset/cookie.png" alt="クラッカー断面イメージ" class="card-image">
+                        <h4>もろさ</h4>
+                        <p>破断強度と変形量から、クッキーのサクサク感やチョコレートのパキッと感を定量評価します。</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="feature-card">
+                        <img src="./asset/asses.png" alt="規格チェックのイメージ" class="card-image">
+                        <h4>品質基準評価</h4>
+                        <p>対象食品がユニバーサルデザインフード（UDF）などの定められた物性規格を満たしているか判定します。</p>
+                    </div>
+                </div>
+
+                <div class="section-footer-hint">
+                    <p>測定項目や事例をさらに詳しくまとめた資料を、ページ下部で無料公開しています。</p>
+                    <div class="mt-small">
+                        <a href="#body3" class="btn btn-primary">資料の詳細を見る</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==============================================
+                 Body2（転）導入で何が変わるか（体験と事例）
+                 ============================================== -->
+            <section class="section body2 bg-light" id="benefits">
+                <div class="section-header">
+                    <h2>データ化で、開発と品質管理はここまで変わる</h2>
+                    <p class="lead-text">機能の話だけでなく、現場が得る「変化」をお伝えします。</p>
+                </div>
+
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">1</div>
+                        <div class="benefit-text">
+                            <h3>試作と評価の往復が速くなる</h3>
+                            <p>評価軸が共通化されるため、試作から次アクションまでの判断が短時間で回ります。</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">2</div>
+                        <div class="benefit-text">
+                            <h3>ばらつきの原因を特定しやすい</h3>
+                            <p>官能では見えづらい差分を数値で捉え、工程条件や配合改善につなげられます。</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">3</div>
+                        <div class="benefit-text">
+                            <h3>規格対応の説明責任を果たせる</h3>
+                            <p>対外説明に使える客観データが蓄積され、監査・商談・輸出対応での信頼性が高まります。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">ケーススタディ</h3>
+                <div class="case-visual mb-medium">
+                    <span class="case-visual-text">様々な業界・用途で<br>SD-700IIをご活用いただいています</span>
+                </div>
+
+                <div class="case-study-list">
+                    <div class="case-card">
+                        <span class="case-tag">製菓</span>
+                        <h4>A社：新商品開発の食感設計</h4>
+                        <p class="case-issue"><strong>課題:</strong> 食感目標が曖昧で試作回数が増加。</p>
+                        <p class="case-result"><strong>変化:</strong> 破断特性を数値目標化し、試作回数を30%削減。</p>
+                    </div>
+                    <div class="case-card">
+                        <span class="case-tag">水産加工</span>
+                        <h4>B社：海外輸出基準への対応</h4>
+                        <p class="case-issue"><strong>課題:</strong> 輸出先要求に対し硬さデータを提示できない。</p>
+                        <p class="case-result"><strong>変化:</strong> 測定手順を標準化し、8カ国への輸出認証を取得。</p>
+                    </div>
+                    <div class="case-card">
+                        <span class="case-tag">研究機関</span>
+                        <h4>C大学：論文データの定量根拠</h4>
+                        <p class="case-issue"><strong>課題:</strong> 論文・発表で再現性のある食感の根拠データが不足。</p>
+                        <p class="case-result"><strong>変化:</strong> 測定条件を固定し、比較可能なデータ品質を確保。</p>
+                    </div>
+                </div>
+
+                <div class="section-footer-hint align-center mt-large">
+                    <p>測定ノウハウや事例をまとめた詳細資料も無料でご用意しております。</p>
+                    <a href="#body3" class="btn btn-primary">資料の詳細を見る</a>
+                </div>
+
+                <!-- 詳細展開エリア（折りたたみ） -->
+                <div class="accordion-container mt-large">
+                    <button class="accordion-trigger" aria-expanded="false" aria-controls="spec-details">
+                        ▼ 詳しいスペック・試験条件を見る
+                    </button>
+                    <div class="accordion-content" id="spec-details" hidden>
+                        <div class="rheotex-intro">
+                            <div class="rheotex-intro-text">
+                                <p class="rheotex-lead">多用途の硬さ測定器</p>
+                                <p>レオテックス SD-700IIは、食品の硬さや破断特性を手早く確認できる、圧縮専用のコンパクト測定器です。</p>
+                                <p>ゼリー、プリン、パン、菓子、練り製品、惣菜、介護食など、さまざまな食品の食感評価・品質管理に対応します。日々のロット確認から、試作比較、出荷前チェックまで、同じ条件で再現性のある測定を行えます。</p>
+                                <p>スタンドアローンで運用できるため、ラボだけでなく製造現場でも扱いやすく、進入距離・荷重制御・破断強度測定の3モードを用途に応じて使い分け可能です。ゼロ点は自動検知のため、煩雑なゼロ調整を省いてスムーズに測定を開始できます。</p>
+                            </div>
+                            <figure class="rheotex-image-wrap">
+                                <img src="./asset/sd700ii.png" alt="レオテックス SD-700II 製品画像" class="rheotex-image">
+                                <figcaption>レオテックス SD-700II（圧縮専用・簡易可搬モデル）</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="spec-table-wrapper mt-medium">
+                            <table class="spec-table">
+                                <thead>
+                                    <tr>
+                                        <th>項目</th>
+                                        <th>レオテックス<br>SD-700II</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>ストローク</th>
+                                        <td>90mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th>測定荷重</th>
+                                        <td>0.01～20N (1g～2kg)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>動作方向</th>
+                                        <td>圧縮のみ</td>
+                                    </tr>
+                                    <tr>
+                                        <th>移動速度</th>
+                                        <td>60mm/min（固定）<br><span class="note">※ご要望に応じて30,120mm/minに変更可能</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>測定モード</th>
+                                        <td>
+                                            <ul
+                                                style="padding-left: 20px; list-style-type: none; margin: 0; padding: 0;">
+                                                <li>破断強度自動検出測定モード</li>
+                                                <li>定深度測定モード</li>
+                                                <li>応力測定モード</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>出力方式</th>
+                                        <td>アナログ出力(0-2V)<br><span class="note">デジタルプリンター出力 (SD-700II DP)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>電源</th>
+                                        <td>AC90～220 V (50/60 Hz)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>寸法</th>
+                                        <td>W210xD180xH280</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="align-center mt-medium">
+                            <a href="https://www.sun-kagaku.com/products/comparison/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-secondary">他のバリエーションも比較する（外部サイト）</a>
+                        </div>
+
+                        <button class="accordion-close">▲ 閉じる</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==============================================
+                 Body3（結）ダウンロード訴求
+                 ============================================== -->
+            <section class="section body3" id="body3">
+                <div class="section-header">
+                    <h2>まずは「知る」ことから始めませんか？</h2>
+                    <p class="lead-text">いきなり導入判断をする必要はありません。現場で使える情報を、まず無料でご確認ください。</p>
+                </div>
+
+                <div class="offer-box mb-medium">
+                    <div class="offer-image">
+                        <img src="asset/semiar.png" alt="食品開発展2025セミナー資料の表紙" class="document-cover">
+                    </div>
+                    <div class="offer-content">
+                        <span class="badge">無料配布</span>
+                        <h3 class="offer-title">食品開発展2025セミナー資料「食品分析の最前線」</h3>
+                        <p class="offer-description">肉・マヨネーズ・ビスケットの測定事例を通じて、食感をどのように数値化し、解釈につなげるかを解説した講演資料です。</p>
+                        <!-- SP表示時のフォームへのアンカーリンク -->
+                        <div class="sp-only-cta">
+                            <a href="#form-section" class="btn btn-primary btn-large">無料で資料をダウンロードする</a>
+                            <p class="form-hint">入力は1分で完了します</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer-box mb-medium">
+                    <div class="offer-image">
+                        <img src="asset/comparison.png" alt="測定ソリューション機器ラインナップ比較資料の表紙" class="document-cover">
+                    </div>
+                    <div class="offer-content">
+                        <span class="badge">無料配布</span>
+                        <h3 class="offer-title">測定ソリューション機器ラインナップ比較資料</h3>
+                        <p class="offer-description">用途や評価項目に応じて最適な機器を選定できるよう、貴社向け測定ソリューションのラインナップを比較整理した資料です。</p>
+                        <!-- SP表示時のフォームへのアンカーリンク -->
+                        <div class="sp-only-cta">
+                            <a href="#form-section" class="btn btn-primary btn-large">無料で資料をダウンロードする</a>
+                            <p class="form-hint">入力は1分で完了します</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer-box">
+                    <div class="offer-image">
+                        <img src="asset/catalog.png" alt="SD-700II製品カタログの表紙" class="document-cover">
+                    </div>
+                    <div class="offer-content">
+                        <span class="badge">無料配布</span>
+                        <h3 class="offer-title">SD-700II 製品カタログ</h3>
+                        <p class="offer-description">SD-700IIの特長、基本仕様、活用イメージをコンパクトに確認できるカタログ資料です。導入検討の初期確認にご活用ください。</p>
+
+                        <!-- SP表示時のフォームへのアンカーリンク -->
+                        <div class="sp-only-cta">
+                            <a href="#form-section" class="btn btn-primary btn-large">無料で資料をダウンロードする</a>
+                            <p class="form-hint">入力は1分で完了します</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- フッター（メインカラム側） -->
+            <footer class="site-footer">
+                <p>&copy; 2026 サン科学 All rights reserved.</p>
+            </footer>
+
+        </main>
+
+        <!-- ==============================================
+             右側・フォームカラム (PC用 / SP時は下部に配置)
+             ============================================== -->
+        <aside class="sidebar-form" id="form-section">
+            <div class="form-sticky-wrapper">
+                <div class="form-header">
+                    <h2>資料ダウンロードフォーム</h2>
+                    <p>以下の項目をご入力いただくと、資料をすぐにダウンロードいただけます。</p>
+                </div>
+
+                <form id="download-form" class="conversion-form" novalidate>
+                    <div id="form-global-error" class="form-global-error" role="alert" hidden></div>
+                    <div class="form-group">
+                        <label for="company">会社名 <span class="required">必須</span></label>
+                        <input type="text" id="company" name="company" placeholder="例：株式会社〇〇" required>
+                        <p class="field-error" data-error-for="company" hidden></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">部署名 <span class="optional">任意</span></label>
+                        <input type="text" id="department" name="department" placeholder="例：品質管理部">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">必須</span></label>
+                        <input type="text" id="name" name="name" placeholder="例：山田 太郎" required>
+                        <p class="field-error" data-error-for="name" hidden></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">必須</span></label>
+                        <input type="email" id="email" name="email" placeholder="例：taro.yamada@example.com" required>
+                        <p class="field-note">ダウンロードリンク送信先</p>
+                        <p class="field-error" data-error-for="email" hidden></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">電話番号 <span class="optional">任意</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="例：03-1234-5678">
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <p class="label-text">ご興味のある分野 <span class="optional">任意</span></p>
+                        <label><input type="checkbox" name="interest" value="品質管理"> 品質管理</label>
+                        <label><input type="checkbox" name="interest" value="研究開発"> 研究開発</label>
+                        <label><input type="checkbox" name="interest" value="海外規格対応"> 海外規格対応</label>
+                        <label><input type="checkbox" name="interest" value="その他"> その他</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <p class="label-text">ご検討状況 <span class="optional">任意</span></p>
+                        <label><input type="checkbox" name="consideration_phase" value="具体的に購入を検討している"> 具体的に購入を検討している</label>
+                        <label><input type="checkbox" name="consideration_phase" value="購入を前提に比較検討している"> 購入を前提に比較検討している</label>
+                        <label><input type="checkbox" name="consideration_phase" value="導入予定は未定だが、将来的に検討している"> 導入予定は未定だが、将来的に検討している</label>
+                        <label><input type="checkbox" name="consideration_phase" value="情報収集・市場調査のため"> 情報収集・市場調査のため</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">ご質問・ご要望 <span class="optional">任意</span></label>
+                        <textarea id="message" name="message" rows="3" placeholder="自由にご記入ください"></textarea>
+                    </div>
+
+                    <div class="privacy-note">
+                        <p>ご登録情報は資料送付および関連ご案内の目的に限定して利用します。<a href="../../../privacy/index.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>をご確認ください。</p>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="label-text">スパム対策認証 <span class="required">必須</span></p>
+                        <!-- TODO(運用): Cloudflare Turnstile の本番 Site Key に差し替える -->
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAACieWe4IxEbfHN45"></div>
+                    </div>
+
+                    <!-- TODO(運用): LP追加時は lp_id を一意な値に更新 -->
+                    <input type="hidden" name="lp_id" value="texture-lp-jp-01">
+                    <input type="hidden" name="lp_version" value="v0">
+                    <input type="hidden" name="form_schema_version" value="2026-02">
+                    <input type="hidden" name="locale" value="ja-JP">
+                    <input type="hidden" name="country" value="JP">
+                    <!-- TODO(運用): requested_material は contact.ts のテンプレートキーと一致させる -->
+                    <input type="hidden" name="requested_material" value="lp_documents">
+                    <input type="hidden" name="page_url" id="page_url" value="">
+                    <input type="hidden" name="turnstileToken" id="turnstileToken" value="">
+
+                    <button type="submit" class="btn btn-primary btn-submit">入力内容を確認する</button>
+                </form>
+
+                <div id="form-confirm-panel" class="confirm-panel" hidden>
+                    <h3>入力内容の確認</h3>
+                    <p class="confirm-lead">以下の内容で送信します。修正が必要な場合は「修正する」を押してください。</p>
+                    <dl class="confirm-list">
+                        <div><dt>会社名</dt><dd data-confirm="company"></dd></div>
+                        <div><dt>部署名</dt><dd data-confirm="department"></dd></div>
+                        <div><dt>お名前</dt><dd data-confirm="name"></dd></div>
+                        <div><dt>メールアドレス</dt><dd data-confirm="email"></dd></div>
+                        <div><dt>電話番号</dt><dd data-confirm="phone"></dd></div>
+                        <div><dt>ご興味のある分野</dt><dd data-confirm="interest"></dd></div>
+                        <div><dt>ご検討状況</dt><dd data-confirm="consideration_phase"></dd></div>
+                        <div><dt>ご質問・ご要望</dt><dd data-confirm="message"></dd></div>
+                    </dl>
+                    <div id="confirm-error" class="form-global-error" role="alert" hidden></div>
+                    <div class="confirm-actions">
+                        <button type="button" id="confirm-back" class="btn btn-secondary">修正する</button>
+                        <button type="button" id="confirm-submit" class="btn btn-primary">この内容で送信する</button>
+                    </div>
+                </div>
+
+                <!-- 送信完了メッセージ（初期非表示） -->
+                <div id="form-success-message" class="success-message" hidden>
+                    <h3>送信ありがとうございました。</h3>
+                    <p>お問い合わせを受け付けました。内容を確認のうえ、担当者よりご連絡します。</p>
+                    <a href="#hero" id="success-back-to-top" class="btn btn-secondary mt-small">トップに戻る</a>
+                </div>
+            </div>
+        </aside>
+
+    </div><!-- /.layout-wrapper -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
