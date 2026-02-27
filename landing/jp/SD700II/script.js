@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    window.dataLayer = window.dataLayer || [];
 
     /* =======================================
        1. Hero Slider Logic 
@@ -107,10 +108,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageUrlInput = document.getElementById('page_url');
     const turnstileTokenInput = document.getElementById('turnstileToken');
     const successBackToTopBtn = document.getElementById('success-back-to-top');
+    let hasFormStarted = false;
+
+    const getFieldValue = (name) => {
+        const field = downloadForm?.querySelector(`[name="${name}"]`);
+        return field ? (field.value || '').toString().trim() : '';
+    };
+
+    const getBaseTrackingParams = (payload = {}) => ({
+        lp_id: payload.lp_id || getFieldValue('lp_id'),
+        lp_version: payload.lp_version || getFieldValue('lp_version'),
+        locale: payload.locale || getFieldValue('locale'),
+        country: payload.country || getFieldValue('country'),
+        page_path: window.location.pathname
+    });
+
+    const pushTrackingEvent = (eventName, params = {}, payload = {}) => {
+        window.dataLayer.push({
+            event: eventName,
+            ...getBaseTrackingParams(payload),
+            ...params
+        });
+    };
+
+    pushTrackingEvent('lp_view');
 
     if (pageUrlInput) {
         pageUrlInput.value = window.location.href;
     }
+
+    const getCtaPosition = (element) => {
+        if (element.classList.contains('sp-floating-cta')) return 'sp-floating';
+        if (element.closest('#body3')) return 'body3';
+        if (element.closest('#body2')) return 'body2';
+        if (element.closest('#hero')) return 'hero';
+        return 'other';
+    };
+
+    document.querySelectorAll('a[href="#form-section"]').forEach((cta) => {
+        cta.addEventListener('click', () => {
+            pushTrackingEvent('cta_click', { cta_position: getCtaPosition(cta) });
+        });
+    });
 
     const requiredFields = ['company', 'name', 'email'];
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -223,10 +262,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    const switchToConfirm = () => {
+    const switchToConfirm = (payload) => {
         downloadForm.setAttribute('hidden', '');
         confirmPanel.removeAttribute('hidden');
         successMsg.setAttribute('hidden', '');
+        pushTrackingEvent('form_confirm_view', {}, payload);
         formHeader?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
@@ -256,6 +296,15 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     if (downloadForm) {
+        downloadForm.addEventListener('input', (e) => {
+            if (hasFormStarted) return;
+            const target = e.target;
+            if (!(target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target instanceof HTMLSelectElement)) return;
+            if (target.type === 'hidden') return;
+            hasFormStarted = true;
+            pushTrackingEvent('form_start');
+        });
+
         requiredFields.forEach((fieldName) => {
             const field = downloadForm.querySelector(`[name="${fieldName}"]`);
             if (!field) return;
@@ -285,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             fillConfirmPanel(payload);
-            switchToConfirm();
+            switchToConfirm(payload);
         });
     }
 
@@ -305,6 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 const payload = collectPayload();
+                pushTrackingEvent('form_submit_attempt', {}, payload);
                 const response = await fetch('/api/contact', {
                     method: 'POST',
                     headers: {
@@ -319,7 +369,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 switchToSuccess();
+                pushTrackingEvent('form_submit_success', {}, payload);
             } catch (error) {
+                pushTrackingEvent(
+                    'form_submit_error',
+                    {
+                        error_type: error instanceof Error ? error.message : 'unknown_error'
+                    }
+                );
                 if (confirmError) {
                     confirmError.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
                     confirmError.removeAttribute('hidden');
